@@ -1,0 +1,30 @@
+{
+  "name": "pray-for-me",
+  "version": "1.0.0",
+  "description": "## Date: 03/28/2022 - 04/01/2022 *** ### By: ***Shane Brooks***",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SDBrooks/PRAY-FOR-ME.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SDBrooks/PRAY-FOR-ME/issues"
+  },
+  "homepage": "https://github.com/SDBrooks/PRAY-FOR-ME#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "chance": "^1.1.8"
+  }
+}
