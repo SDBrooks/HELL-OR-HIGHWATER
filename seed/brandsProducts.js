@@ -280,7 +280,7 @@ const main = async () => {
         price: ' $680  ',
         inStock: true,
         colorWay: ' Black ',
-        size: ' One Size (Only one left) ',
+        size: ' One Size ',
         itemCode: ' AMLCMB-2022 ',
         image: ' https://cache.mrporter.com/variants/images/27086482324554361/in/w1200_q60.jpg ',
         brand: brand10._id
