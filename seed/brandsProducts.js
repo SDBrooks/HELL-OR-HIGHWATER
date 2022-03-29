@@ -128,28 +128,59 @@ const main = async () => {
         brand: brand2._id
     },
     { 
-        name: ' Adidas Yeezy Knit Runner Boot "Sulfer" ',
-        description: ' The adidas Yeezy Knit Runner Boot was unveiled by Kanye West himself during last year`s Yeezy Season 8 showing. Unique in design, the lower half of the boost is covered in a Yellow overlay that looks very similar to the design of the adidas Yeezy Knit Runner that dropped back in September. The other notable feature is the extended collar and a velcro fastening system that take care of the rest of the exposed upper. Below you will find a thick tread underfoot ideal for the harsh weather conditions that winter brings. ',
-        price: ' $400 ',
+        name: ' Adidas Yeezy 450 "Cloud White" ',
+        description: ' The adidas Yeezy 450 was designed by Steven Smith, who also designed the Reebok Insta Pump Fury and Nike Zoom Streak Spectrum Plus. This colorway of the adidas Yeezy 450 is constructed with a Cloud White mesh upper, unique lacing system and sits atop a very aggressive White sole that grips the shoe. There are no signs of either Boost or adiPRENE cushioning, thus making it a first for a non-boot Yeezy. ',
+        price: ' $200 ',
         inStock: true,
-        colorWay: ' Sulfer/Sulfer/Sulfer ',
-        size: ' 9 ',
-        itemCode: ' GY1824 ',
-        image: ' https://2app.kicksonfire.com/kofapp/upload/events_images/ipad_adidas-yeezy-knit-runner-boot-sulfur-0.jpeg ',
+        colorWay: ' Cloud White ',
+        size: ' 11 ',
+        itemCode: ' H68038 ',
+        image: ' https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-yeezy-450-cloud-white.jpg ',
         brand: brand2._id
     },
     {
-      title: 'New Balance 574 Core',
-      description: 'https://www.newbalance.com/pd/574-core/ML574-EG.html',
-      price: '84',
-      brand: brand3._id
+        name: ' Supreme "Reign 23" Backpack ',
+        description: ' Water resistant Cordura® recycled nylon ripstop with embossed logo lining. Main zip compartment with single layer laptop sleeve. Front zip compartment with interior zip pocket and organizer pockets. Elastic mesh side pockets with interior elastic shockcords. Padded mesh back panel and adjustable shoulder straps. Elastic utility shockcord with printed logo pattern at front. Woven logo label at front. Embroidered graphic at lower front and embroidered logo on side. 23L. ',
+        price: ' $158 ',
+        inStock: true,
+        colorWay: ' Brown ',
+        size: ' One Size ',
+        itemCode: ' SUPNYC23L ',
+        image: ' https://assets.supremenewyork.com/231239/ma/th8b3RDECmo.jpg ',
+        brand: brand3._id
     },
     {
-      title: 'Tribe Messenger Bike 004',
-      description:
-        'https://tribebicycles.com/collections/messenger-series/products/mess-004-tx',
-      price: '675',
-      brand: brand4._id
+        name: ' Supreme Ambigram Keychain ',
+        description: ' 3" metal keychain with enamel logo and 1" keyring. Original artwork by Mark Palmer. ',
+        price: ' $22 ',
+        inStock: false,
+        colorWay: ' Red ',
+        size: ' One Size ',
+        itemCode: ' SUPNYC3KEY ',
+        image: ' https://assets.supremenewyork.com/231239/ma/th8b3RDECmo.jpg ',
+        brand: brand3._id
+    },
+    {
+        name: ' MCQ Grow Up Quilted Patchwork Padded Cotton Hooded Jacket ',
+        description: ' Give the impression of being a committed make and mender with MCQ`s patchwork jacket. Part of the label`s "Grow Up" collection, which makes use of overstock textiles from past seasons, it`s cut from cotton patterned with an array of prints and quilted with insulating padding. ',
+        price: ' $1,200 ',
+        inStock: true,
+        colorWay: ' Multi-Color ',
+        size: ' L ',
+        itemCode: ' MCQQHJ-2022 ',
+        image: ' https://cache.mrporter.com/variants/images/24665545640569709/in/w1200_q60.jpg ',
+        brand: brand4._id
+    },
+    {
+        name: ' Givenchy Oversized Distressed Patchwork Bandana-Print Cotton Hooded Down Jacket ',
+        description: ' Givenchy`s jacket is assembled in a patchwork of bandana prints and lightly distressed. It`s cut for an oversized fit from cotton and works well layered over chunky sweaters and hoodies. ',
+        price: ' $1,200 ',
+        inStock: true,
+        colorWay: ' Multi-Color ',
+        size: ' L ',
+        itemCode: ' MCQQHJ-2022 ',
+        image: ' https://cache.mrporter.com/variants/images/24665545640569709/in/w1200_q60.jpg ',
+        brand: brand5._id
     },
     {
       title: 'Stumptown Hair Bender Coffee',
