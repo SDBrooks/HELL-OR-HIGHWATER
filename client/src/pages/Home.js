@@ -21,6 +21,7 @@ function Home(props) {
                             onClick={() => navigate(`/products/${Products.name}`)}
                         />
                     ))}
+                    
                 </div>
             </div>        
         </div>

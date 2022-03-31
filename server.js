@@ -5,6 +5,9 @@ const PORT = process.env.PORT || 3000
 const db = require('./db')
 const { Product, Brand } = require('./models')
 const res = require('express/lib/response')
+const { Router } = require('react-router-dom')
+// const controller = require('../controllers/Controller.js')
+
 
 const app = express()
 
@@ -49,7 +52,16 @@ app.get('/brands/:id', async (req, res) => {
         res.send('Product not found!')
 }
 })
+app.delete('/brands/:id',async (req, res) => {  
+  try {    const { id } = req.params;  
+    const deleted = await Brand.findByIdAndDelete(id);  
+      if (deleted) {   
+           return res.status(200).send('Brand deleted');    }   
+            throw new Error('Brand not found');  }
+             catch (error) {  
+                return res.status(500).send(error.message);  }})
 
 app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`)
 })
+

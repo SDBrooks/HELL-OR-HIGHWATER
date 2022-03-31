@@ -5,6 +5,7 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
+// import { append } from 'express/lib/response';
 
 
   function App() {
@@ -31,8 +32,27 @@ import Home from './pages/Home';
   useEffect( () => {
     getBrand()
     getProduct()
-  
+
   }, [])
+
+ const deleteBrand = async(e) => {
+  e.preventDefault();
+  const res = await axios.delete(`${BASE_URL}/brands/${e.target.id}`)
+}
+
+// const updateBrand = async(e) => { 
+//   e.preventDefault();
+//   const res = await axios.update( )
+// }
+
+  
+  
+//   const element = document.querySelector('#delete-request .status');
+// axios.delete('https://localhost:3001/brands/1')
+//     .then(() => element.innerHTML = 'Delete successful');
+//  function deleteBrand() {
+//   alert(brands)
+//  }
 
   return (
     <div className="App">
@@ -40,18 +60,43 @@ import Home from './pages/Home';
      <header > 
     <Navigation />
       </header>
-      {brands.map((e) => (<div> {e.name}</div> ) )}
-         {/* <main>
-            <Routes>
-            
-            
-            <Route />
+      {brands.map((e) => (
 
-            </Routes>
+        <div> 
 
-          </main> */}
+      <div> {e.name}</div>
+      
+      
+      <button onClick={()=>deleteBrand(brands)}> Delete </button>
+      
+
+      <button> Update </button>
+      </div>   ) )}
     </div>
+    
   );
-}
+  // function deleteBrand() {
+  //   axios 
+  //     .delete(`${BASE_URL}/1`)
+  //     .then(() => {
+  //       alert("Brand deleted!");
+  //       setBrands(null)
+  //     });  }
 
+ 
+  
+
+  // if (!brand) return "No Brand!"
+
+  // return (
+  //   <div>
+  //     <h1> {brand.name} </h1>
+  //     <button onClick={deleteBrand}>Delete Brand</button>
+  //   </div>
+  // );
+
+ 
+
+      }
+  
 export default App;
