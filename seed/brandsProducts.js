@@ -6,61 +6,51 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 const main = async () => {
   const brand1 = await new Brand({
     name: 'Nike',
-    // url: ' '
   })
   brand1.save()
 
   const brand2 = await new Brand({
     name: 'YEEZY',
-    // url: ' '
   })
   brand2.save()
 
   const brand3 = await new Brand({
     name: 'Supreme',
-    // url: ' '
   })
   brand3.save()
 
   const brand4 = await new Brand({
     name: 'MCQ',
-    // url: ' '
   })
   brand4.save()
 
   const brand5 = await new Brand({
     name: 'Givenchy',
-    // url: ' '
   })
   brand5.save()
 
   const brand6 = await new Brand({
     name: 'Moncler',
-    // url: ' '
   })
   brand6.save()
   
   const brand7 = await new Brand({
     name: 'Balenciaga',
-    // url: ' '
   })
   brand7.save()
   
   const brand8 = await new Brand({
     name: 'CELINE HOMME',
-    // url: ' '
   })
   brand8.save()
 
   const brand9 = await new Brand({
     name: 'KAPITAL',
-    // url: ' '
   })
   brand9.save()
 
   const brand10 = await new Brand({
     name: 'Alexander McQueen',
-    // url: ' '
   })
   brand10.save()
 

@@ -1,11 +1,13 @@
+import React from 'react'
 import { useState, useEffect } from 'react'
 import './style/App.css';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Navigation from './components/Navigation';
+import Home from './pages/Home';
 
 
-function App() {
+  function App() {
   const BASE_URL = 'http://localhost:3000'
   
   const [brands, setBrands] = useState([])
@@ -34,20 +36,20 @@ function App() {
 
   return (
     <div className="App">
-      {brands.map((e) => (<div> {e.name}
-    </div>        
-        ) )}
-      {/* <header > 
+  
+     <header > 
     <Navigation />
       </header>
-         <main>
+      {brands.map((e) => (<div> {e.name}</div> ) )}
+         {/* <main>
             <Routes>
+            
             
             <Route />
 
             </Routes>
 
-         </main> */}
+          </main> */}
     </div>
   );
 }

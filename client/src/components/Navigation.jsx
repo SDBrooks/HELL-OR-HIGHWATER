@@ -6,7 +6,7 @@ const Navigation = () => {
     return (
         <nav className= "nav" >
                 <h1> HELL OR HIGHWATER! </h1>
-                <Link to="/"> Home </Link>
+                {/* <Link to="/"> Home </Link> */}
 
 
         </nav>

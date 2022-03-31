@@ -1,22 +1,30 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
+import Products from '../components/Products';
 
-function Brands(props) {
-    let {name} = useParams()
 
-    const brands = props.Brands.find((result) => name === result.name)
+function Home(props) {
+    let navigate = useNavigate()
 
     return (
-        <div className="info">
-        <div className='info-picture' >
-            <br />
-            <img src={brands.image} alt="brands"/>
+        <div>
+            <h1> HELL OR HIGHWATER! </h1>
+            <div className='HomePage'>
+                <h2> Most Popular </h2>
+                <div className='container-grid'>
+                    {props.Products.map((Products) => (
+                        <Products
+                            name={Products.name}
+                            description={Products.description}
+                            image={Products.image}
+                         
+                            onClick={() => navigate(`/products/${Products.name}`)}
+                        />
+                    ))}
+                </div>
+            </div>        
         </div>
-        <div className="info-text">
-             <h1>{brands.name} </h1>
-             <h4>{brands.location}</h4>
-             <p>{brands.description}</p>
-        </div>
-    </div>
-    )
+    );
 }
+
+export default Home;

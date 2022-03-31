@@ -3,7 +3,7 @@ const cors = require('cors')
 const logger = require('morgan')
 const PORT = process.env.PORT || 3000
 const db = require('./db')
-const { Product } = require('./models')
+const { Product, Brand } = require('./models')
 const res = require('express/lib/response')
 
 const app = express()
@@ -32,6 +32,23 @@ app.get('/products', async (req, res) => {
           res.send('Product not found!')
   }
  })
+
+ app.get('/brands', async (req, res) => {
+  const brand = await Brand.find()
+  res.json(brand)
+})
+
+app.get('/brands/:id', async (req, res) => {
+  try {
+  const { id } = req.params
+  const brand = await Brand.findById(id)
+  if (!brand) throw Error('Product not found')
+  res.json(brand)
+} catch (e) {
+    console.log(e) 
+        res.send('Product not found!')
+}
+})
 
 app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`)
