@@ -35,9 +35,9 @@ import Home from './pages/Home';
 
   }, [])
 
- const deleteBrand = async(e) => {
-  e.preventDefault();
-  const res = await axios.delete(`${BASE_URL}/brands/${e.target.id}`)
+ const deleteProducts = async(e,id) => {
+  // e.preventDefault();
+  axios.delete(`${BASE_URL}/products/62434430ceb13c13530921b7`)
 }
 
 // const updateBrand = async(e) => { 
@@ -45,29 +45,27 @@ import Home from './pages/Home';
 //   const res = await axios.update( )
 // }
 
-  
-  
-//   const element = document.querySelector('#delete-request .status');
-// axios.delete('https://localhost:3001/brands/1')
-//     .then(() => element.innerHTML = 'Delete successful');
-//  function deleteBrand() {
-//   alert(brands)
-//  }
-
   return (
     <div className="App">
   
      <header > 
     <Navigation />
       </header>
-      {brands.map((e) => (
+      {products.map((e) => (
 
-        <div> 
-
-      <div> {e.name}</div>
+        <div className='productInfo'> 
+        <h1> {e.name} </h1>
+        <h2> {e.price} </h2>
+      <div> 
+            <img src={e.image} alt='product'/>
+            {/* {e.brand} */}
+        
+        
+        </div>
+        
       
       
-      <button onClick={()=>deleteBrand(brands)}> Delete </button>
+      <button onClick={()=>deleteProducts(products)}> Delete </button>
       
 
       <button> Update </button>

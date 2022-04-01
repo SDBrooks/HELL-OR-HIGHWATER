@@ -122,14 +122,14 @@ const main = async () => {
         brand: brand3._id
     },
     {
-        name: ' Supreme - Ambigram Keychain ',
-        description: ' 3" metal keychain with enamel logo and 1" keyring. Original artwork by Mark Palmer. ',
-        price: ' $22 ',
+        name: ' Supreme - GORE-TEX PACLITE® Suit ',
+        description: ' Waterproof, breathable GORE-TEX PACLITE® poly shell with taped seams. Full zip closure with zip hand pockets and zip stash pocket at sleeve. Fixed hood with interior elastic shockcord. Two-way pit zips and velcro tab adjusters at cuffs. Interior elastic shockcord and full-leg zip openings at cuffs. Embroidered logos on hood and sleeve with printed logo at right side. ',
+        price: ' $398 ',
         inStock: false,
-        colorWay: ' Red ',
-        size: ' One Size ',
-        itemCode: ' SUPNYC3KEY ',
-        image: ' https://assets.supremenewyork.com/231239/ma/th8b3RDECmo.jpg ',
+        colorWay: ' White ',
+        size: ' Sold out ',
+        itemCode: ' SUPNYCGTP ',
+        image: ' https://assets.supremenewyork.com/231955/ma/3M_APawJFpQ.jpg ',
         brand: brand3._id
     },
     {

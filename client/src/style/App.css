@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+img {
+  width: 400px;
+  height: 350px;
+
+}
+.productInfo {
+  color: black;
+  width: auto;
+  height: auto;
+  margin: 0 0 150px 0;
+  flex-direction: column;
+}
+body {
+  /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/bc/William-Adolphe_Bouguereau_%281825-1905%29_-_Pieta_%281876%29.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  
+}
+.nav h1 {
+  color: Red;
+  font-size: 65px;
+}

@@ -12,13 +12,13 @@ function Home(props) {
             <div className='HomePage'>
                 <h2> Most Popular </h2>
                 <div className='container-grid'>
-                    {props.Products.map((Products) => (
+                    {props.products.map((e) => (
                         <Products
-                            name={Products.name}
-                            description={Products.description}
-                            image={Products.image}
+                            name={props.name}
+                            description={props.description}
+                            image={props.image}
                          
-                            onClick={() => navigate(`/products/${Products.name}`)}
+                            onClick={() => navigate(`/products/${props.name}`)}
                         />
                     ))}
                     
