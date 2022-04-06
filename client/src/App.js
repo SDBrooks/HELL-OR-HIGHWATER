@@ -1,12 +1,13 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import './style/App.css';
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { router } from 'react-router-dom';
 import axios from 'axios';
 import Navigation from './components/Navigation';
-import Home from './pages/Home';
+// import Home from './pages/Home';
 
   function App() {
+
   const BASE_URL = 'http://localhost:3000'
   
   const [brands, setBrands] = useState([])
@@ -32,10 +33,11 @@ import Home from './pages/Home';
 
   }, [])
 
- const deleteProducts = async(e,id) => {
+ const deleteProducts = async(e) => {
   // e.preventDefault();
-  axios.delete(`${BASE_URL}/products/62434430ceb13c13530921b0`)
-}
+ await axios.delete(`${BASE_URL}/products/:${e.target.id}`)
+ window.location.reload();
+};
 
 const updateProducts = async(e) => { 
   // e.preventDefault();
