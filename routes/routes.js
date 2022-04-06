@@ -1,5 +1,6 @@
 const { Router } = require('express');
 const router = Router();
+const controllers = require('../Controllers')
 // const controllers = require('../controllers');
 
 // router.get('/api', (req, res) => res.send('This is root!'));
