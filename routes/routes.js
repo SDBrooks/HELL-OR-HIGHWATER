@@ -17,10 +17,18 @@ const controllers = require('../Controllers')
 
 router.get('/', (req, res) => res.send('This is root!'))
 
-router.put('/updateproduct/:id', controllers.updateproduct)
+router.get('/products', controllers.getAllProducts)
 
-router.post('/product/add/', controllers.createProduct)
+router.get('/products/:id', controllers.getProductById)
 
-router.delete('/product/:id', controllers.deleteproduct)
+router.get('/brands/:id', controllers.getBrandsById)
+
+router.get('/brands', controllers.getAllBrands)
+
+router.put('/products/:id', controllers.updateproduct)
+
+router.post('/products/add/', controllers.createProduct)
+
+router.delete('/products/:id', controllers.deleteproduct)
 
 module.exports = router;
