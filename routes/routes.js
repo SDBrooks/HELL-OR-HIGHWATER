@@ -15,10 +15,12 @@ const controllers = require('../Controllers')
 
 // const router = Router();
 
-app.get('/', (req, res) => res.send('This is root!'))
+router.get('/', (req, res) => res.send('This is root!'))
 
-app.put('/updateproduct/:id', controllers.updateproduct)
+router.put('/updateproduct/:id', controllers.updateproduct)
 
-app.delete('/product/:id', controllers.deleteproduct)
+router.post('/product/add/', controllers.createProduct)
+
+router.delete('/product/:id', controllers.deleteproduct)
 
 module.exports = router;
