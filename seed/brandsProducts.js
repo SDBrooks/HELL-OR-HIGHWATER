@@ -1,5 +1,5 @@
 const db = require('../db')
-const { Brand, Product } = require('../models')
+const { Brand, Product } = require('../models/index')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -64,6 +64,7 @@ const main = async () => {
       size: ' 12 ',
       itemCode: ' CD2182-100 ',
       image: ' https://2app.kicksonfire.com/kofapp/upload/events_images/ipad_nike-air-max-720-ispa-summit-white-0.jpg ',
+
       brand: brand1._id
     },
     {

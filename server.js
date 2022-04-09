@@ -3,14 +3,16 @@ const cors = require("cors");
 const logger = require("morgan");
 const PORT = process.env.PORT || 3000;
 const db = require("./db");
-const { Product, Brand } = require("./models");
+const { Product, Brand } = require("./models/index");
 const res = require("express/lib/response");
 const { Router } = require("react-router-dom");
+const routes = require("./routes/routes")
 // const controller = require('../controllers/Controller.js')
 
 const app = express();
 
 app.use(cors());
+app.use('/api', routes);
 app.use(express.json());
 app.use(logger("dev"));
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))

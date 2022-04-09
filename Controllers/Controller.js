@@ -1,5 +1,6 @@
-const { Brand, Product } = require("../models")
-  
+  const  { Brand, Product }  = require("../models/index")
+
+
   const getAllProducts = ('/products', async (req, res) => {
       try {
     const products = await Product.find();
@@ -9,22 +10,22 @@ const { Brand, Product } = require("../models")
       }
   });
 
-const getProductById = async (req, res) => {
+const getProductById =('/products/:id', async (req, res) => {
     try {
-      const { id } = req.params;
-      const products = await Product.findById(id);
-      if (products) {
-        return res.status(200).json({ products });
-      }
-      return res.status(404).send('Product with the specified ID does not exist');
+      const { id } = req.params
+      const products = await Product.findById(id)
+     
+        return res.status(200).json({ products })
+      
+   
     } catch (error) {
-      return res.status(500).send(error.message);
+      return res.status(500).send(error.message)
     }
-  };
+  });
   
   const getAllBrands = async (req, res) => {
     try {
-  const brands = await Product.find();
+  const brands = await Brand.find();
   return res.status(200).json({ brands })
     }catch (error) {
         return res.status(500).send(error.message);
@@ -56,7 +57,7 @@ const getBrandById = async (req, res) => {
     }
   };
   
-  const deleteproduct =  async (req, res) => {
+  const deleteProduct =  async (req, res) => {
     try {
       const { id } = req.params;
       const deleted = await Product.findByIdAndDelete(id);
@@ -85,6 +86,6 @@ const getBrandById = async (req, res) => {
     getAllBrands,
     getBrandById,
     deleteBrand,
-    deleteproduct,
+    deleteProduct,
     updateProduct
   }

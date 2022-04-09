@@ -1,6 +1,30 @@
 const { Router } = require('express');
+const Controllers = require('../Controllers/Controller')
 const router = Router();
-const controllers = require('../Controllers')
+
+router.get('/', (req, res) => res.send('This is root!'))
+
+router.get('/products', Controllers.getAllProducts)
+
+router.get('/products/:id', Controllers.getProductById)
+
+router.get('/brands/:id', Controllers.getBrandById)
+
+router.get('/brands', Controllers.getAllBrands)
+
+router.put('/products/:id', Controllers.updateProduct)
+
+// router.post('/products/add/', Controllers.createProduct)
+
+router.delete('/products/:id', Controllers.deleteProduct)
+
+module.exports = router;
+
+
+
+
+
+
 // const controllers = require('../controllers');
 
 // router.get('/api', (req, res) => res.send('This is root!'));
@@ -14,21 +38,3 @@ const controllers = require('../Controllers')
 // const { Router } = require('express');
 
 // const router = Router();
-
-router.get('/', (req, res) => res.send('This is root!'))
-
-router.get('/products', controllers.getAllProducts)
-
-router.get('/products/:id', controllers.getProductById)
-
-router.get('/brands/:id', controllers.getBrandsById)
-
-router.get('/brands', controllers.getAllBrands)
-
-router.put('/products/:id', controllers.updateproduct)
-
-router.post('/products/add/', controllers.createProduct)
-
-router.delete('/products/:id', controllers.deleteproduct)
-
-module.exports = router;
