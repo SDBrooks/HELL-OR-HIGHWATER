@@ -14,3 +14,5 @@
 
 ### ***Getting Started***
 
+ERD
+![image](https://i.imgur.com/tdRs8D8.png)
