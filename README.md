@@ -1,4 +1,4 @@
-# PRAY FOR ME
+# HELL OR HIGHWATER!
 
 ## Date: 03/28/2022 - 04/01/2022
 ***
@@ -8,7 +8,8 @@
 ***
 
 ### ***Description***
-"PRAY FOR ME" is Shane Brooks' second project while attending General Assembly. It was created and published between the dates of 03/28/2022 - 04/01/2022. It is a high-end, mens boutique, consisting of garments, as well as footwear and accessories. It is a testing ground for his future endeavors is the fashion industry. Do enjoy.
+"HELL OR HIGHWATER!" is Shane Brooks' second project while attending General Assembly. It was created and published between the dates of 03/28/2022 - 04/01/2022. It is a high-end men’s ecommerce store, consisting of garments as well as footwear and accessories.
+It is a testing ground for his future endeavors is the fashion industry. Do enjoy.
 
 ***
 

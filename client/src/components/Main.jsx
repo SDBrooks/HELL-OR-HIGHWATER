@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios';
 import Navigation from './Navigation';
 import { Link } from 'react-router-dom';
-  
+
 
 function Main() {
 
